@@ -19,7 +19,7 @@ export default function TermsPage() {
               </p>
               <p>
                 1.2. Správcem osobních údajů je WASH'N'GO!, se sídlem Vojtěšská 211/6, Nové Město (Praha 1), 
-                110 00 Praha, IČ: [DOPLŇTE IČ], e-mail: [DOPLŇTE EMAIL], telefon: +420 704 749 531 
+                110 00 Praha, IČ: 22260421, e-mail: info@washngo.cz, telefon: +420 704 749 531 
                 (dále jen „Správce").
               </p>
               <p>
@@ -52,7 +52,7 @@ export default function TermsPage() {
             <h2 className="text-2xl font-semibold mb-4">3. DOBA UCHOVÁVÁNÍ OSOBNÍCH ÚDAJŮ</h2>
             <div className="space-y-4 mb-8">
               <p>
-                3.1. Osobní údaje budou uchovávány po dobu trvání souhlasu Klienta, nejdéle však 3 roky 
+                3.1. Osobní údaje budou uchovávány po dobu trvání souhlasu Klienta, nejdéle však 4 roky 
                 od jeho udělení.
               </p>
               <p>
@@ -72,7 +72,7 @@ export default function TermsPage() {
                 <li>Vznést námitku proti zpracování pro marketingové účely</li>
               </ul>
               <p>
-                4.2. Klient může uplatnit svá práva e-mailem na [DOPLŇTE EMAIL] nebo písemně na adresu 
+                4.2. Klient může uplatnit svá práva e-mailem na info@washngo.cz nebo písemně na adresu 
                 sídla Společnosti.
               </p>
               <p>
@@ -85,7 +85,7 @@ export default function TermsPage() {
             <div className="space-y-4 mb-8">
               <p>
                 5.1. Klient může kdykoli odvolat svůj souhlas se zpracováním osobních údajů a s kontaktováním, 
-                a to e-mailem na [DOPLŇTE EMAIL] nebo telefonicky na +420 704 749 531.
+                a to e-mailem na info@washngo.cz nebo telefonicky na +420 704 749 531.
               </p>
               <p>
                 5.2. Po odvolání souhlasu Správce přestane Klienta kontaktovat a jeho údaje budou v souladu 
