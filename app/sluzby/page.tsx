@@ -1,9 +1,7 @@
 "use client"
 
 import { Card } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Droplets, Sparkles, Brush, Shield, Car, SprayCan as Spray, Wrench } from "lucide-react"
-import Link from "next/link"
+import { ArrowRight, Droplets, Sparkles, Shield, Car, SprayCan as Spray, Wrench } from "lucide-react"
 
 const services = [
   {
@@ -90,9 +88,6 @@ export default function ServicesPage() {
                     ))}
                   </ul>
                 </div>
-                <Button className="w-full mt-auto" asChild>
-                  <Link href="/kontakt">Najít nejbližší myčku</Link>
-                </Button>
               </Card>
             ))}
           </div>
