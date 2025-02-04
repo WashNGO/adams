@@ -16,7 +16,7 @@ export default function Home() {
             muted 
             playsInline
           >
-            <source src="/videos/background.mp4" type="video/mp4" />
+            <source src="/videos/washngo.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-black/40" />
         </div>
