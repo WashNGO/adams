@@ -17,6 +17,7 @@ export default function Home() {
             playsInline
           >
             <source src="/videos/washngo.mp4" type="video/mp4" />
+            Váš prohlížeč nepodporuje přehrávání videa.
           </video>
           <div className="absolute inset-0 bg-black/40" />
         </div>
