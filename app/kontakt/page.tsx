@@ -61,7 +61,7 @@ export default function ContactPage() {
               <Card className="p-6">
                 {/* Formulář s napojením na Formspree */}
                 <form 
-                  action="https://formspree.io/f/mjkgqrqv" 
+                  action="https://formspree.io/f/mdkazrkq" 
                   method="POST" 
                   className="space-y-6"
                 >
