@@ -29,26 +29,6 @@ export default function Home() {
             Bezkontaktní automyčky WASH'N'GO nabízí nejmodernější technologie 
             pro dokonalou čistotu vašeho vozu
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              size="lg" 
-              className="bg-blue-600 hover:bg-blue-700 text-white transform transition-all hover:scale-105" 
-              asChild
-            >
-              <Link href="/sluzby">
-                Naše služby <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
-            <Button 
-              size="lg" 
-              className="bg-[#e0f2ff] hover:bg-[#cce7ff] text-blue-800 border border-blue-200 
-                dark:bg-blue-900 dark:hover:bg-blue-800 dark:text-white dark:border-blue-700
-                transform transition-all hover:scale-105 hover:shadow-lg" 
-              asChild
-            >
-              <Link href="/kontakt">Najít nejbližší myčku</Link>
-            </Button>
-          </div>
         </div>
       </section>
 
