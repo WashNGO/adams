@@ -59,29 +59,34 @@ export default function ContactPage() {
 
             <div>
               <Card className="p-6">
-                <form className="space-y-6">
+                {/* Formulář s napojením na Formspree */}
+                <form 
+                  action="https://formspree.io/f/mjkgqrqv" 
+                  method="POST" 
+                  className="space-y-6"
+                >
                   <div className="space-y-2">
                     <Label htmlFor="name">Jméno a příjmení</Label>
-                    <Input id="name" required />
+                    <Input id="name" name="name" required />
                   </div>
                   
                   <div className="space-y-2">
                     <Label htmlFor="email">E-mail</Label>
-                    <Input id="email" type="email" required />
+                    <Input id="email" name="email" type="email" required />
                   </div>
                   
                   <div className="space-y-2">
                     <Label htmlFor="phone">Telefon</Label>
-                    <Input id="phone" type="tel" />
+                    <Input id="phone" name="phone" type="tel" />
                   </div>
                   
                   <div className="space-y-2">
                     <Label htmlFor="message">Zpráva</Label>
-                    <Textarea id="message" required />
+                    <Textarea id="message" name="message" required />
                   </div>
                   
                   <div className="flex items-start space-x-2">
-                    <Checkbox id="gdpr" required />
+                    <Checkbox id="gdpr" name="gdpr" required />
                     <Label htmlFor="gdpr" className="text-sm leading-tight">
                       Souhlasím se zpracováním osobních údajů v souladu s{" "}
                       <Link href="/obchodni-podminky" className="text-primary hover:underline">
