@@ -10,7 +10,7 @@ export default function Home() {
       <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <video 
-            className="w-full h-full object-cover" 
+            className="absolute top-0 left-0 w-full h-full object-cover" 
             autoPlay 
             loop 
             muted 
@@ -18,7 +18,7 @@ export default function Home() {
           >
             <source src="/videos/background.mp4" type="video/mp4" />
           </video>
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40" />
+          <div className="absolute inset-0 bg-black/40" />
         </div>
         
         <div className="container relative z-10 text-center text-white max-w-4xl mx-auto px-4">
