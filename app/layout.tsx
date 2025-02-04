@@ -8,7 +8,7 @@ import { Footer } from "@/components/footer";
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'WASH\'N\'GO - Bezkontaktní automyčky',
+  title: 'WASH\'N\'GO',
   description: 'Moderní bezkontaktní automyčky WASH\'N\'GO nabízí profesionální služby mytí vozidel s důrazem na kvalitu a ekologii.',
 };
 
