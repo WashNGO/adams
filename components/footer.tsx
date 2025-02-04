@@ -1,18 +1,19 @@
 import Link from "next/link"
-import { Facebook, Instagram, Mail, Phone } from "lucide-react"
+import { Facebook, Instagram, Mail, Phone, Droplets } from "lucide-react"
 
 export function Footer() {
   return (
     <footer className="w-full border-t bg-background">
       <div className="container py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div>
-            <h3 className="text-lg font-semibold mb-4">WASH'N'GO</h3>
-            <p className="text-sm text-muted-foreground">
-              Profesionální bezkontaktní automyčky pro váš vůz. Kvalita a ekologie na prvním místě.
-            </p>
+          <div className="flex items-center space-x-2">
+            <Droplets className="h-6 w-6 text-blue-600" /> {/* Přidání kapky vedle názvu */}
+            <h3 className="text-lg font-semibold">WASH'N'GO</h3>
           </div>
-          
+          <p className="text-sm text-muted-foreground">
+            Profesionální bezkontaktní automyčky pro váš vůz. Kvalita a ekologie na prvním místě.
+          </p>
+
           <div>
             <h3 className="text-lg font-semibold mb-4">Rychlé odkazy</h3>
             <ul className="space-y-2">
