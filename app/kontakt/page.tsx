@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from "react";
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -10,6 +11,28 @@ import { Phone, Mail, MapPin } from "lucide-react"
 import Link from "next/link"
 
 export default function ContactPage() {
+  const [formStatus, setFormStatus] = useState<string>("");
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const form = e.target as HTMLFormElement;
+
+    const formData = new FormData(form);
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: formData,
+    });
+
+    if (response.ok) {
+      setFormStatus("success");
+      // Přesměrování zpět na původní stránku po odeslání
+      window.location.href = window.location.href;
+    } else {
+      setFormStatus("error");
+    }
+  };
+
   return (
     <>
       <section className="py-16 md:py-24">
@@ -64,6 +87,7 @@ export default function ContactPage() {
                   action="https://formspree.io/f/mdkazrkq" 
                   method="POST" 
                   className="space-y-6"
+                  onSubmit={handleSubmit}
                 >
                   <div className="space-y-2">
                     <Label htmlFor="name">Jméno a příjmení</Label>
@@ -99,6 +123,13 @@ export default function ContactPage() {
                     Odeslat zprávu
                   </Button>
                 </form>
+
+                {formStatus === "success" && (
+                  <p className="text-green-600">Formulář byl úspěšně odeslán!</p>
+                )}
+                {formStatus === "error" && (
+                  <p className="text-red-600">Došlo k chybě při odesílání formuláře.</p>
+                )}
               </Card>
             </div>
           </div>
