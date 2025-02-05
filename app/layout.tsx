@@ -8,8 +8,8 @@ import { Footer } from "@/components/footer";
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'WASH\'N\'GO',
-  description: 'Moderní bezkontaktní automyčky WASH\'N\'GO nabízí profesionální služby mytí vozidel s důrazem na kvalitu a ekologii.',
+  title: "WASH'N'GO",
+  description: "Moderní bezkontaktní automyčky WASH'N'GO nabízí profesionální služby mytí vozidel s důrazem na kvalitu a ekologii.",
 };
 
 export default function RootLayout({
@@ -19,6 +19,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="cs" suppressHydrationWarning>
+      <head>
+        {/* Přidání favicon */}
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+      </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navigation />
