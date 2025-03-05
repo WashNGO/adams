@@ -72,7 +72,7 @@ export default function ContactPage() {
                     <div>
                       <p className="font-medium">Centrála</p>
                       <p className="text-muted-foreground">
-                        Hlavní 123, 110 00 Praha 1
+                        Vojtěšská 211/6, Nové Město (Praha 1), 110 00 Praha
                       </p>
                     </div>
                   </div>
